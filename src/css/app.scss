@@ -1,0 +1,247 @@
+// app global css in SCSS form
+
+p{
+    margin: 0;
+}
+
+.header{
+    background: $mainBlue;
+    height: 100%;
+    &-wrapper{
+        background: $mainBlue;
+        height: 60px;
+    }
+    &-content {
+        height: 100%;
+        margin: auto;
+    }
+}
+
+.user{
+    height: 100%;
+    &-info{
+        border-left: 1px solid $mainWhite;
+        border-right: 1px solid $mainWhite;
+        padding: 0 20px;
+        height: 100%;
+    }
+    &-avatar{
+        margin-right: 15px;
+    }
+}
+
+#logout{
+    border-right: 1px solid $mainWhite;  
+    height: 100%;
+    padding: 0 5px;
+    & .q-btn__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    & img{
+        margin: 0;
+        & + div{
+            font-size: 9px;
+            font-weight: 400;
+        }
+    }
+}
+
+.q-tabs{
+    height: 100%;
+}
+
+.q-tab__label{
+    font-size: 14px;
+}
+
+.container{
+    width: 1200px;
+    margin: auto;
+    height: 100%;
+}
+
+.breadcrumbs{
+    padding: 30px 0;
+}
+
+
+.filter-wrapper .q-avatar__content{
+    height: 18px;
+    width: 18px;
+}
+
+.filter-item{
+    width: 260px;
+}
+
+.table{
+    color: #0c436a;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 24px;
+}
+
+.table-header th{
+    color: #0c436a;
+font-family: "Open Sans";
+font-size: 16px;
+font-weight: 700;
+line-height: 24px;
+text-align: left;
+    font-style: normal;
+}
+
+.button-wrapper{
+    justify-content: flex-end;
+    margin-top: 30px;
+    & button{
+        &:first-child{
+            margin-right: 20px;
+        }
+    }
+}
+
+
+.table__title{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 20px 0;
+}
+
+.table__title .table__icon{
+    height: 36px;
+    width: 32px;
+    margin-right: 15px
+}
+
+.table__title h2{
+ color: #000000;
+font-family: "Open Sans";
+font-size: 24px;
+font-weight: 700;
+line-height: 16px;
+}
+
+.date-item{
+    width: 460px;
+}
+
+.q-date__header, .bg-primary{
+    background-color: $mainBlue !important;
+}
+
+.date-icon{
+    background: url(../statics/icons/date.png) 50% 50% no-repeat;
+    width: 18px;
+    height: 18px;
+}
+
+.title{
+    font-size: 14px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    color: #0c436a;
+font-family: "Open Sans";
+font-size: 14px;
+font-weight: 700;
+}
+
+.q-field--float .q-field__label{
+    display: none;
+}
+
+.show{
+    cursor: pointer;
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url('../statics/icons/show.png');
+}
+.button-wrapper{
+    & .q-btn{
+    color: $darkBlue;
+    border: 1px solid lightslategray;
+    width: 160px;
+    height: 46px !important;
+    border-radius: 20px;
+}
+}
+
+#gerar{
+    background: #38f16f !important;
+    border: none !important;
+}
+
+.q-table{
+   & tbody{
+       & td{
+            font-size: 16px;
+       }
+   } 
+}
+
+.q-field__native{
+    font-size: 16px;
+font-weight: 300;
+font-style: italic;
+color: $darkBlue;
+}
+
+.q-placeholder::placeholder{
+    color: $darkBlue;
+    opacity: 1;
+}
+
+.q-field__label{
+    color: $darkBlue;
+    font-style: italic;
+}
+
+.filter-input{
+    height: 20px;
+}
+
+.q-field__control{
+    height: 30px;
+}
+
+.q-field__marginal {
+    height: 30px;
+}
+
+.filter-item{
+    & .q-avatar{
+        height: 30px;
+        display: flex;
+        align-items: center;
+        width: 20px;
+        cursor: pointer;
+    }
+}
+
+.q-field--auto-height .q-field__control{
+    min-height: 20px;
+    align-items: center;
+}
+
+.q-field--with-bottom{
+    padding-bottom: 0;
+}
+
+.q-field--auto-height .q-field__native{
+    padding-bottom: 0;
+}
+
+.q-field--auto-height.q-field--labeled .q-field__control-container{
+    padding-top: 0px;
+}
+
+.q-field__label{
+    top: 4px
+}
