@@ -42,7 +42,7 @@
           <q-select label="Parceiro selecionado" v-model="name" type="text" :options="selectOptions()" />
         </div>
       </div>
-      <Table :filter='filter' :formatDate='formatDate'></Table>
+      <Table :filter='filter' :formatDate='formatDate' :showId='showId'></Table>
       <div class="button-wrapper row items-center">
         <q-btn @click="clearFilter" rounded id="report" label="Clear filter" />
         <q-btn @click="report" rounded id="gerar" label="gerar relatório" />

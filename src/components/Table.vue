@@ -27,7 +27,7 @@
 <script>
 export default {
   name: 'Table',
-  props: ['filter', 'formatDate'],
+  props: ['filter', 'formatDate', 'showId'],
   data () {
     return {
       title: [{
