@@ -1,15 +1,19 @@
 <template>
-<div class="breadcrumbs-wrapper">
+  <div class="breadcrumbs-wrapper">
     <div class="container">
-        <div class="breadcrumbs">
-    <q-breadcrumbs>
-      <q-breadcrumbs-el icon="img:statics/icons/home.png" to="/" />
-      <q-breadcrumbs-el label="pageIndex" to="/pageIndex"/>
-      <q-breadcrumbs-el label="other" to="/other" />
-    </q-breadcrumbs>
-        </div>
+      <div class="breadcrumbs">
+        <q-breadcrumbs>
+          <q-breadcrumbs-el icon="img:statics/icons/home.png" to="/"></q-breadcrumbs-el>
+          <q-breadcrumbs-el
+            v-for="(item) in breadcrumbs"
+            :key="item.label"
+            :to="item.to"
+            :label="item.label"
+          />
+        </q-breadcrumbs>
+      </div>
     </div>
-</div>
+  </div>
 </template>
 
 <script>
@@ -17,9 +21,18 @@ export default {
   name: 'Breadcrumbs',
   data () {
     return {
+      breadcrumbs: [
+        {
+          label: 'other',
+          to: '/other'
+        },
+        {
+          label: 'pageIndex',
+          to: '/pageIndex'
+        }
+      ]
     }
   },
-  methods: {
-  }
+  methods: {}
 }
 </script>

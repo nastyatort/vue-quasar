@@ -1,23 +1,19 @@
 <template>
-<div>
+  <div>
     <Header></Header>
-    <Breadcrumbs></Breadcrumbs>
-    <Table></Table>
-</div>
+    <Filters></Filters>
+  </div>
 </template>
 
 <script>
-
 import Header from '../layouts/Header.vue'
-import Breadcrumbs from '../layouts/Breadcrumbs.vue'
-import Table from '../components/Table.vue'
+import Filters from '../components/Filters.vue'
 
 export default {
   name: 'PageIndex',
   components: {
     Header,
-    Breadcrumbs,
-    Table
+    Filters
   }
 }
 </script>

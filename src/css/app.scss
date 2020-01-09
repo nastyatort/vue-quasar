@@ -4,7 +4,7 @@ p{
     margin: 0;
 }
 
-.header{
+.navigations{
     background: $mainBlue;
     height: 100%;
     &-wrapper{
@@ -14,6 +14,12 @@ p{
     &-content {
         height: 100%;
         margin: auto;
+    }
+}
+
+.header{
+    &-wrapper{
+        height: 135px;
     }
 }
 
@@ -30,7 +36,7 @@ p{
     }
 }
 
-#logout{
+logout{
     border-right: 1px solid $mainWhite;  
     height: 100%;
     padding: 0 5px;
@@ -65,6 +71,10 @@ p{
 
 .breadcrumbs{
     padding: 30px 0;
+    color: black;
+    &-wrapper{
+        background: white;
+    }
 }
 
 
@@ -170,12 +180,11 @@ font-weight: 700;
     width: 160px;
     height: 46px !important;
     border-radius: 20px;
+    &:first-child{
+        background: #38f16f;
+        border: none;  
+    }
 }
-}
-
-#gerar{
-    background: #38f16f !important;
-    border: none !important;
 }
 
 .q-table{
